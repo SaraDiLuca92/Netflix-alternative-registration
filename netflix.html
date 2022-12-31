@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Netflix</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Poppins:wght@400;700&family=Prata&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="header">
+      <nav>
+        <img src="./images/logo.png" alt="" class="logo" />
+        <div>
+          <button class="language-btn">
+            English <img src="./images/down-icon.png" alt="" />
+          </button>
+          <button>Sign In</button>
+        </div>
+      </nav>
+      <div class="header-content">
+        <h1>Ryuk ti consiglia di iscriverti a Netflix!</h1>
+        <h3>Questo è l'unico modo per sopravvivere</h3>
+        <p>Lasciaci la tua e-mail e ti cancelleremo dal Death Note</p>
+        <form class="email-signup">
+          <input type="email" placeholder="Email address" required />
+          <button type="submit" class="submit">Get Started</button>
+          <script>
+            for (let clickButton of document.getElementsByClassName("submit"))
+              clickButton.addEventListener("click", alertMeessage);
+            function alertMeessage() {
+              alert("Complimenti! Puoi continuare a vivere!");
+            }
+          </script>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
